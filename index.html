@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hook & Retry</title>
+  <link rel="icon" type="image/png" href="img/512x512.png" />
+</head>
+<body>
+  <style>
+    @font-face {
+      font-family: LuckiestGuy;
+      src: url(res/font/LuckiestGuy-Regular.ttf);
+    }
+
+    * {
+      font-family: LuckiestGuy;
+      color: white;
+    }
+
+    body {
+      background-image: url('img/LoadingScreen4096x2304.png');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .game-name {
+      margin: 0;
+      font-size: 3rem;
+
+      position: fixed;
+      bottom: 33%;
+      left: 50%;
+      transform: translate(-50%, 0%);
+
+      -webkit-text-stroke-width: 3px;
+      -webkit-text-stroke-color: rgba(0, 0, 0, 0.904);
+      text-shadow: 4px 4px #0000007e;
+
+      width: 100%;
+      text-align: center;
+    }
+
+    .div-btn-stores {
+      position: fixed;
+      bottom: 5%;
+      left: 50%;
+      transform: translate(-50%, 0%);
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .btn-store-google {
+      width: 300px;
+    }
+
+    .btn-store-apple {
+      width: 260px;
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    /* Tablet CSS */
+    @media only screen and (min-width: 768px) {
+      .game-name {
+        font-size: 6rem;
+
+        bottom: 25%;
+
+        -webkit-text-stroke-width: 4px;
+        -webkit-text-stroke-color: rgba(0, 0, 0, 0.904);
+        text-shadow: 5px 5px #0000007e;
+      }
+
+      .div-btn-stores {
+        bottom: 5%;
+        left: 50%;
+        transform: translate(-52%, 0%);
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .btn-store-google {
+        width: 410px;
+      }
+
+      .btn-store-apple {
+        width: 320px;
+      }
+    }
+
+    /* Desktop CSS */
+    @media only screen and (min-width: 992px) {
+      .game-name {
+        bottom: 25%;
+      }
+
+      .div-btn-stores {
+        bottom: 4%;
+        left: 50%;
+        transform: translate(-56%, 0%);
+      }
+
+      .btn-store-google {
+        width: 500px;
+      }
+
+      .btn-store-apple {
+        width: 400px;
+      }
+    }
+  </style>
+  <p class="game-name">Shield Up!</p>
+  <div class="div-btn-stores">
+    <a
+      href="https://play.google.com/store/apps/details?id=com.TFTL.ninja"
+      target="_blank"
+      class="flex"
+    >
+      <input
+        class="btn-store-google"
+        type="image"
+        alt="PlayStore"
+        src="img/google-play-badge.png"
+      />
+    </a>
+    <a
+      href="https://apps.apple.com/us/app/hook-retry/id6714468849?itscg=30200&itsct=apps_box_link&mttnsubad=6714468849"
+      target="_blank"
+      class="flex"
+    >
+      <input
+        class="btn-store-apple"
+        type="image"
+        alt="AppStore"
+        src="img/apple-store-badge.svg"
+      />
+    </a>
+  </div>
+</body>

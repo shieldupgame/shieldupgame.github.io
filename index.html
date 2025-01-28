@@ -22,11 +22,8 @@
     }
 
     body {
-      background-image: url('img/LoadingScreen4096x2304.png');
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: cover;
-      background-position: center;
+      background: rgb(84,0,255);
+      background: linear-gradient(45deg, rgba(84,0,255,1) 0%, rgba(239,165,255,1) 100%);
     }
 
     .game-name {
@@ -117,9 +114,11 @@
       }
 
       .game-icon {
+        width: 400px;
+        position: absolute;
         bottom: 50%;
         left: 50%;
-        background-image: url('img/shieldup-icon.png');
+        transform: translate(-50%, 0%);
       }
     }
   </style>
